@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Архитектура Яндекс Карт" id="0">
+    <mxGraphModel dx="73611" dy="49080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="B_CA2zvnr4yOjF6yQ8mQ-1" edge="1" parent="1" source="user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="browser" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="user" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Пользователь" vertex="1">
+          <mxGeometry height="60" width="150" x="40" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="B_CA2zvnr4yOjF6yQ8mQ-2" edge="1" parent="1" source="browser" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="client" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="browser" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Браузер" vertex="1">
+          <mxGeometry height="60" width="150" x="250" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="B_CA2zvnr4yOjF6yQ8mQ-3" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="api" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="client" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Интерфейс + клиентская часть" vertex="1">
+          <mxGeometry height="80" width="220" x="460" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="B_CA2zvnr4yOjF6yQ8mQ-4" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="route" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="API" vertex="1">
+          <mxGeometry height="60" width="150" x="750" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="B_CA2zvnr4yOjF6yQ8mQ-7" edge="1" parent="1" source="search" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="db" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="search" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Сервер поиска" vertex="1">
+          <mxGeometry height="60" width="170" x="970" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="B_CA2zvnr4yOjF6yQ8mQ-5" edge="1" parent="1" source="route" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="search" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B_CA2zvnr4yOjF6yQ8mQ-6" edge="1" parent="1" source="route" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="map" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="route" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Сервер маршрутизации" vertex="1">
+          <mxGeometry height="60" width="190" x="970" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="map" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Картографические данные&#xa;и дорожная сеть" vertex="1">
+          <mxGeometry height="70" width="200" x="970" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Хранилище данных" vertex="1">
+          <mxGeometry height="60" width="180" x="1210" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="browser" value="действие" />
+        <mxCell id="e2" edge="1" parent="1" source="browser" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="client" value="отображение" />
+        <mxCell id="e3" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="api" value="запрос" />
+        <mxCell id="e4" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="search" value="поиск" />
+        <mxCell id="e5" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="route" value="маршрут" />
+        <mxCell id="e6" edge="1" parent="1" source="search" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="db" value="данные" />
+        <mxCell id="e7" edge="1" parent="1" source="route" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="map" value="данные карты" />
+        <mxCell id="e8" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="client" value="результат" />
+        <mxCell id="e9" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="browser" value="результат" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
