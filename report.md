@@ -93,13 +93,13 @@
 
 Результат отображается непосредственно на карте.
 
-**скриншот 1**
+[**скриншот 1**](https://github.com/jese2ch/computer-science-lab1/blob/lab-report/images/скриншот%201.jpg)
 
-**скриншот 2**
+[**скриншот 2**](https://github.com/jese2ch/computer-science-lab1/blob/lab-report/images/скриншот%202.jpg)
 
-**скриншот 3**
+[**скриншот 3**](https://github.com/jese2ch/computer-science-lab1/blob/lab-report/images/скриншот%203.jpg)
 
-**скриншот 4**
+[**скриншот 4**](https://github.com/jese2ch/computer-science-lab1/blob/lab-report/images/скриншот%204.jpg)
 
 
 3. Анализ клиентской части системы
@@ -121,7 +121,7 @@ JavaScript;
 
 Для открытия DevTools использовалась клавиша F12.
 
-**скриншот 5**
+[**скриншот 5**](https://github.com/jese2ch/computer-science-lab1/blob/lab-report/images/скриншот%205.jpg)
 
 
 3.1. Исследование HTML в Elements
@@ -142,7 +142,7 @@ HTML отвечает за структуру страницы. Например
 
 В данном случае выбранная кнопка является частью интерфейса карточки организации и используется для запуска построения маршрута.
 
-**скриншот 6**
+[**скриншот 6**](https://github.com/jese2ch/computer-science-lab1/blob/lab-report/images/скриншот%206.jpg)
 
 
 3.2. Исследование CSS
@@ -164,7 +164,7 @@ CSS отвечает за визуальное оформление элемен
 
 Таким образом, HTML определяет структуру элемента, а CSS отвечает за его внешний вид.
 
-**скриншот 7**
+[**скриншот 7**](https://github.com/jese2ch/computer-science-lab1/blob/lab-report/images/скриншот%207.jpg)
 
 
 3.3. JavaScript
@@ -179,7 +179,7 @@ JavaScript является важной частью клиентской ло�
 
 В DevTools можно увидеть загружаемые JavaScript-файлы в разделе Sources или среди сетевых ресурсов в разделе Network.
 
-**скриншот 8**
+[**скриншот 8**](https://github.com/jese2ch/computer-science-lab1/blob/lab-report/images/скриншот%208.jpg)
 
 
 3.4. Анализ сетевых запросов в Network
@@ -207,12 +207,12 @@ Network показывает запросы, которые браузер от�
 
 | Параметр       | Значение                                           |
 | -------------- | -------------------------------------------------- |
-| Request URL    | Вставить значение из DevTools                      |
-| Request Method | Вставить значение из DevTools                      |
-| Status Code    | Вставить значение из DevTools                      |
-| Type           | Вставить значение из DevTools                      |
+| Request URL    | https://maps.yastatic.net/s3/front-maps-static/maps -front-maps/static/v57/icons/service/search-14.svg   |
+| Request Method | GET                      |
+| Status Code    | 200 OK (from disk cache)                      |
+| Type           | image/svg+xml                      |
 | Назначение     | Получение данных, связанных с выполнением сценария |
-**скриншот 9**
+[**скриншот 9**](https://github.com/jese2ch/computer-science-lab1/blob/lab-report/images/скриншот%209.jpg)
 
 По сетевым запросам можно сделать вывод, что клиентская часть Яндекс Карт взаимодействует с серверной частью системы для получения необходимых данных.
 
