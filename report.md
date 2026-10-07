@@ -207,7 +207,7 @@ Network показывает запросы, которые браузер от�
 
 | Параметр       | Значение                                           |
 | -------------- | -------------------------------------------------- |
-| Request URL    | https://maps.yastatic.net/s3/front-maps-static/maps -front-maps/static/v57/icons/service/search-14.svg   |
+| Request URL    | https://maps.yastatic.net/s3/front-maps-static/maps-front-maps/static/v57/icons/service/search-14.svg   |
 | Request Method | GET                      |
 | Status Code    | 200 OK (from disk cache)                      |
 | Type           | image/svg+xml                      |
